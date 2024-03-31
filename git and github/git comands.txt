@@ -22,5 +22,59 @@ Push code to GitHub
 8- make bundle of your code using (commit = prew code + new changes)
         git commit -m "commit name"
 -9 git push origin main
+                                                                                                                                    
+Topic: Git & GitHub 
+
+git init =>  git ko btanay k liye k is folder kii versioning tum nay karniii hai 
+
+git add index.html => git ko btanayyy k liye k index.html file new baniiii hai 
+
+Aisi files Jin ki changes k baray main git updated ho aisi files ko staged files kehtayyy hain 
+
+
+git add -A => is command say git ko btatayyy hain k is repository / directory main Jitni b new files baniii hain Un sab ko stage kardo
+
+git add wali command k bad Hum git commit wali command lagatayyy hain tah k staged ya added files ka aik version bana de: 
+git commit 
+
+Aur humain logically commit karte huwe aik message b detayy hain Jis main Hum version ya changes kii details k related message likhtayyy hain as follow: 
+
+git commit -m “description message abc”
+
+
+A means added 
+M means modified 
+
+Green coloured lines ka git ko abhi naiii pata hota like abhi add hui hain but stage ya add naiii huyiiin 
+ 
+Red coloured lines means k yey lines remove ho gayiii hain us ka btanay k liye b add wali command Chalani hogii tah k stage ho sakay 
+
+Deleted files k baray main b btanay k liye git add -A run karni hogiii 
+
+Aur deleted files k according version bananayyy k liye git commit wali command run karni hogii 
+
+Versions Saray abhi tak locally he stored hon gay .git walay folder main 
+
+Aur in locally stored versions ko GitHub cloud pe upload ya store karwanay k liye following command run karni hotiii hai: 
+
+git push origin master
+
+Laikin dunya main itnay Saray clouds hain to kese pata chalay ga k kis cloud repo main push karna hai 
+
+Is ko solve karnay k liye Jis tarha local repository banayiii thii wese he aik repository GitHub cloud pe ja kar b bananiii hai tah k Wahan local versions ko push kar sakain 
+
+Note: local and global repositories names can be different but we keep it same to avoid confusion 
+
+Cloud pe repository create karnay say cloud pe aik empty repository ban jayega 
+
+Aur cloud pe add karnay k liye: 
+
+git remote add origin https://github.com/username/repository_name.git
+
+Aur is k bad git push origin master run karnay say push hojayegiii us cloud repository pe 
+
+Kisi ko apni repository ki access denay k liye settings main ja k collaborators ko add ksrna hoga aur access mil jayegi 
+
+Changes ya versions dekhnay k liye GitHub cloud pe repository main ja k commits pe ja kar track down kar saktay hain
 
 Best of luck
